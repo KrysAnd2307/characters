@@ -1,0 +1,9 @@
+
+#ifndef CHARACTERS_ARRAY_H
+#define CHARACTERS_ARRAY_H
+#define SIZE 80
+
+
+
+
+#endif //CHARACTERS_ARRAY_H
