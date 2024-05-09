@@ -18,14 +18,19 @@ int main() {
     do{
         menu();
         scanf("%d", &choice);
+        clear();
         switch(choice) {
             case 1:
+                enterText(text);
                 break;
             case 2:
+                displayText(text);
                 break;
             case 3:
+                printf("text lenght = %d\n",countCharacters(text));
                 break;
             default:
+                printf("Select the correct program\n");
                 break;
         }
 
