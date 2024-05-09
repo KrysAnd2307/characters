@@ -21,3 +21,19 @@ int countCharacters(char *text){
 void clear(void){
     while( getchar() != '\n' );
 }
+void lowerCase(char *text){
+    while(*text){
+        if('A' <= *text && *text <= 'Z'){
+            *text += ('a' - 'A');
+        }
+        text++;
+    }
+}
+void upperCase(char *text){
+    while(*text){
+        if('a' <= *text && *text <= 'z'){
+            *text -= ('a' - 'A');
+        }
+        text++;
+    }
+}

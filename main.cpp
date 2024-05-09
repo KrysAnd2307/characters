@@ -6,7 +6,9 @@ void menu(){
     printf("1 - Enter Text\n");
     printf("2 - Display Text\n");
     printf("3 - Count the characters\n");
-    printf("4 - End the program\n");
+    printf("4 - Upper case\n");
+    printf("5 - Lower case\n");
+    printf("0 - End the program\n");
 }
 
 
@@ -29,12 +31,18 @@ int main() {
             case 3:
                 printf("text lenght = %d\n",countCharacters(text));
                 break;
+            case 4:
+                upperCase(text);
+                break;
+            case 5:
+                lowerCase(text);
+                break;
             default:
                 printf("Select the correct program\n");
                 break;
         }
 
-    }while(choice != 4);
+    }while(choice != 0);
 
 
     return 0;
